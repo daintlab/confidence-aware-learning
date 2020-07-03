@@ -68,12 +68,12 @@ python test.py --save_path ./vgg_svhn/ --file_name model --model vgg --data svhn
 
 | Architecture | Dataset | Model | ACC | AURC | AUPR | FPR | ECE | NLL |
 |---------|--------|--------|--------|--------|--------|--------|--------|--------------------------------------------------------------------|
-| PreActResNet110	| CIFAR100	| Baseline	| 73.32 | 86.54 | 65.37 | 66.41 | 16.39 | 42.31 | 
-| PreActResNet110	| CIFAR100	| CRL-softmax	| 74.34 | 72.35 | 68.13 | 61.30 | 11.44 | 37.30 | 
-| DenseNet_BC	| CIFAR100	| Baseline	| 75.13 | 72.39 | 66.40 | 62.84 | 12.93 | 37.62 |
-| DenseNet_BC	| CIFAR100	| CRL-softmax	| 76.75 | 62.71 | 65.86 | 60.21 | 8.66 | 33.40 |
-| VGG16	| CIFAR100	| Baseline	| 73.62 | 77.79 | 68.10 | 62.20 | 19.94 | 44.98 |
-| VGG16	| CIFAR100	| CRL-softmax	| 73.84 | 71.98 | 71.04 | 59.05 | 13.91 | 39.46 |
+| PreActResNet110	| CIFAR100	| Baseline	| 73.32 | 86.54 | 65.37 | 66.42 | 16.39 | 14.93 | 
+| PreActResNet110	| CIFAR100	| CRL-softmax	| 74.34 | 72.35 | 68.13 | 61.30 | 11.45 | 10.86 | 
+| DenseNet_BC	| CIFAR100	| Baseline	| 75.13 | 72.40 | 66.41 | 62.85 | 12.94 | 11.59 |
+| DenseNet_BC	| CIFAR100	| CRL-softmax	| 76.75 | 62.71 | 65.87 | 60.22 | 8.66 | 9.12 |
+| VGG16	| CIFAR100	| Baseline	| 73.62 | 77.80 | 68.11 | 62.21 | 19.95 | 18.35 |
+| VGG16	| CIFAR100	| CRL-softmax	| 73.84 | 71.98 | 71.04 | 59.06 | 13.92 | 13.03 |
 
 * More results can be found in the paper.
 
