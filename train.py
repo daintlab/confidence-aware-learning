@@ -62,17 +62,17 @@ def train(loader, model, criterion_cls, criterion_ranking, optimizer, epoch, his
         ranking_loss = args.rank_weight * ranking_loss
         loss = cls_loss + ranking_loss
 
+        # compute gradient and do optimizer step
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        
         # record loss and accuracy
         prec, correct = utils.accuracy(output, target)
         total_losses.update(loss.item(), input.size(0))
         cls_losses.update(cls_loss.item(), input.size(0))
         ranking_losses.update(ranking_loss.item(), input.size(0))
         top1.update(prec.item(), input.size(0))
-
-        # compute gradient and do optimizer step
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
 
         # measure elapsed time
         batch_time.update(time.time() - end)
