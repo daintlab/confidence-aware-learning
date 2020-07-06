@@ -1,5 +1,5 @@
 # Confidence-Aware Learning for Deep Neural Networks
-This repository provides the code for training with *Correctness Ranking Loss* presented in the paper "Confidence-Aware Learning for Deep Neural Networks" accepted to ICML2020.
+This repository provides the code for training with *Correctness Ranking Loss* presented in the paper "[Confidence-Aware Learning for Deep Neural Networks](https://arxiv.org/abs/2007.01458)" accepted to ICML2020.
 
 ## Getting Started
 ### Requirements
